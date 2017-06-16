@@ -1,3 +1,6 @@
+//Run this script and use the serial monitor to check that all buttons are sending the right signal.  
+  
+  
   #include <Keyboard.h>
   void setup() {  
   Serial.begin(9600);
