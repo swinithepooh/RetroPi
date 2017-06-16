@@ -1,3 +1,5 @@
+//Code for the controller with six playing buttons, two buttons for coin and start, and a joystick
+
 #include <Keyboard.h>
 void setup() {
   Keyboard.begin();
