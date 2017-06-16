@@ -16,6 +16,8 @@ void setup() {
   pinMode(7, INPUT_PULLUP); //Button 4
   pinMode(8, INPUT_PULLUP); //Coin
   pinMode(9, INPUT_PULLUP); //Start
+  pinMode(10, INPUT_PULLUP);
+  pinMode(11, INPUT_PULLUP);
 }
 
 
@@ -125,7 +127,7 @@ void loop() {
 
 
   // Coin - enter
-  if (coin == HIGH) {
+  if (coin == LOW) {
     Keyboard.press(13);
   }
   else {
@@ -134,7 +136,7 @@ void loop() {
 
 
   // Start - spacebar
-  if (start == HIGH) {
+  if (start == LOW) {
     Keyboard.press(32); delay(100);
   }
   else {
